@@ -6,6 +6,7 @@ import {
   Star, 
   Clock, 
   Calendar,
+  Phone,
   Heart,
   Brain,
   Eye,
