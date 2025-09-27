@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { 
-  Calendar, 
-  Clock, 
-  User, 
-  Phone, 
-  Mail, 
   Stethoscope,
   CheckCircle,
-  AlertCircle,
   ArrowRight,
   Heart,
   Brain,
   Eye,
-  Bone,
-  Activity
+  Bone
 } from 'lucide-react'
 import { doctorApi, appointmentApi } from '../services/api'
 import { Doctor, Appointment, BookingFormData } from '../types'
@@ -26,7 +19,6 @@ interface AppointmentBookingProps {
 }
 
 const AppointmentBooking: React.FC<AppointmentBookingProps> = ({ 
-  appointments, 
   setAppointments 
 }) => {
   const [doctors, setDoctors] = useState<Doctor[]>([])

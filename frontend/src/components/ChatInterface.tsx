@@ -9,7 +9,6 @@ import {
   Stethoscope,
   Heart,
   MessageCircle,
-  ArrowLeft,
   RotateCcw
 } from 'lucide-react'
 import { chatApi } from '../services/api'
@@ -181,7 +180,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, setMessages }) 
               )}
             </AnimatePresence>
 
-            {messages.map((message, index) => (
+            {messages.map((message) => (
               <motion.div
                 key={message.id}
                 initial={{ opacity: 0, y: 20, scale: 0.95 }}

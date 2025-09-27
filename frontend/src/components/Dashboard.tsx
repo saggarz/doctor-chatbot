@@ -7,13 +7,9 @@ import {
   Calendar, 
   Stethoscope,
   Heart,
-  Activity,
-  Clock,
   Star,
   ArrowRight,
-  Sparkles,
-  Shield,
-  Zap
+  Sparkles
 } from 'lucide-react'
 import { doctorApi } from '../services/api'
 import { Doctor } from '../types'

@@ -3,12 +3,8 @@ import { motion } from 'framer-motion'
 import { 
   Stethoscope, 
   Search, 
-  Filter, 
   Star, 
   Clock, 
-  MapPin,
-  Phone,
-  Mail,
   Calendar,
   Heart,
   Brain,
