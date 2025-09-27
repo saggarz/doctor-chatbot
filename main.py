@@ -11,6 +11,7 @@ from schemas import (
     ChatMessage, ChatResponse, Doctor, DoctorCreate, Patient, PatientCreate,
     Appointment, AppointmentCreate, DoctorAvailability, DoctorAvailabilityCreate
 )
+from models import Doctor as DoctorModel
 from services import DoctorService, PatientService, AppointmentService, ChatbotService
 from openai_service import OpenAIService
 
@@ -37,6 +38,23 @@ chat_sessions = {}
 @app.get("/")
 async def root():
     return {"message": "Doctor's Assistant Chatbot API"}
+
+@app.get("/debug/doctors")
+async def debug_doctors(db: Session = Depends(get_db)):
+    """Debug endpoint to check what doctors are in the database"""
+    doctors = db.query(DoctorModel).all()
+    return {
+        "count": len(doctors),
+        "doctors": [
+            {
+                "id": doctor.id,
+                "name": doctor.name,
+                "specialty": doctor.specialty,
+                "department": doctor.department
+            }
+            for doctor in doctors
+        ]
+    }
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(message: ChatMessage, db: Session = Depends(get_db)):
