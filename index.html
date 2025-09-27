@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .status {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            color: #2e7d32;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            color: #666;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Doctor's Assistant Chatbot</h1>
+        <p style="font-size: 1.2em; color: #666; margin-bottom: 30px;">
+            AI-powered medical assistant for finding doctors, booking appointments, and getting medical guidance.
+        </p>
+        
+        <div class="status">
+            ✅ <strong>Deployment Successful!</strong><br>
+            Your Doctor's Assistant Chatbot is now live and running!
+        </div>
+        
+        <div class="features">
+            <h3>🎯 Features Available:</h3>
+            <ul>
+                <li><strong>AI Chat Interface</strong> - Natural language conversations about medical needs</li>
+                <li><strong>Doctor Search</strong> - Find specialists by medical condition or specialty</li>
+                <li><strong>Appointment Booking</strong> - Schedule appointments with available doctors</li>
+                <li><strong>Medical Guidance</strong> - Get AI-powered health advice and recommendations</li>
+            </ul>
+        </div>
+        
+        <div style="margin: 30px 0;">
+            <h3>🔧 Next Steps:</h3>
+            <p style="color: #666; margin-bottom: 20px;">
+                1. Set your OpenAI API key in Vercel dashboard<br>
+                2. Test the chat functionality<br>
+                3. Try booking an appointment
+            </p>
+        </div>
+        
+        <a href="https://vercel.com/saggs-projects-345977b4/doctor-chatbot" class="btn" target="_blank">
+            🔧 Vercel Dashboard
+        </a>
+        <a href="https://github.com/saggarz/doctor-chatbot" class="btn" target="_blank">
+            📁 GitHub Repository
+        </a>
+        
+        <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <h4 style="color: #333; margin-bottom: 10px;">🚀 Deployment Info:</h4>
+            <p style="color: #666; font-size: 0.9em; margin: 0;">
+                Frontend: React + TypeScript + Tailwind CSS<br>
+                Backend: FastAPI + Python + SQLite<br>
+                AI: OpenAI GPT-3.5-turbo with Function Calling<br>
+                Hosting: Vercel (Full-stack deployment)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
