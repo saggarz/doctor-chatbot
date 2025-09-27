@@ -15,32 +15,210 @@ def init_database():
             print("Database already initialized")
             return
         
-        # Create sample doctors
+        # Create sample doctors with Indian names and comprehensive specialties
         doctors_data = [
+            # Cardiology
             {
-                "name": "Dr. Sarah Johnson",
+                "name": "Dr. Rajesh Kumar",
                 "specialty": "Cardiology",
-                "department": "Internal Medicine"
+                "department": "Cardiology"
             },
             {
-                "name": "Dr. Michael Chen",
+                "name": "Dr. Priya Sharma",
+                "specialty": "Cardiology",
+                "department": "Cardiology"
+            },
+            
+            # Orthopedics
+            {
+                "name": "Dr. Amit Patel",
                 "specialty": "Orthopedics",
-                "department": "Surgery"
+                "department": "Orthopedics"
             },
             {
-                "name": "Dr. Emily Davis",
+                "name": "Dr. Sunita Reddy",
+                "specialty": "Orthopedics",
+                "department": "Orthopedics"
+            },
+            
+            # Neurology
+            {
+                "name": "Dr. Vikram Singh",
+                "specialty": "Neurology",
+                "department": "Neurology"
+            },
+            {
+                "name": "Dr. Anjali Gupta",
+                "specialty": "Neurology",
+                "department": "Neurology"
+            },
+            
+            # Dermatology
+            {
+                "name": "Dr. Ravi Verma",
                 "specialty": "Dermatology",
                 "department": "Dermatology"
             },
             {
-                "name": "Dr. Robert Wilson",
-                "specialty": "Orthopedics",
-                "department": "Surgery"
+                "name": "Dr. Meera Joshi",
+                "specialty": "Dermatology",
+                "department": "Dermatology"
+            },
+            
+            # Pediatrics
+            {
+                "name": "Dr. Suresh Iyer",
+                "specialty": "Pediatrics",
+                "department": "Pediatrics"
             },
             {
-                "name": "Dr. Lisa Brown",
+                "name": "Dr. Kavita Nair",
+                "specialty": "Pediatrics",
+                "department": "Pediatrics"
+            },
+            
+            # Gynecology
+            {
+                "name": "Dr. Deepak Agarwal",
+                "specialty": "Gynecology",
+                "department": "Gynecology"
+            },
+            {
+                "name": "Dr. Rekha Desai",
+                "specialty": "Gynecology",
+                "department": "Gynecology"
+            },
+            
+            # General Medicine
+            {
+                "name": "Dr. Arun Kumar",
                 "specialty": "General Medicine",
                 "department": "Internal Medicine"
+            },
+            {
+                "name": "Dr. Shanti Devi",
+                "specialty": "General Medicine",
+                "department": "Internal Medicine"
+            },
+            
+            # Ophthalmology
+            {
+                "name": "Dr. Mohan Lal",
+                "specialty": "Ophthalmology",
+                "department": "Ophthalmology"
+            },
+            {
+                "name": "Dr. Geeta Singh",
+                "specialty": "Ophthalmology",
+                "department": "Ophthalmology"
+            },
+            
+            # ENT
+            {
+                "name": "Dr. Ramesh Tiwari",
+                "specialty": "ENT",
+                "department": "ENT"
+            },
+            {
+                "name": "Dr. Usha Menon",
+                "specialty": "ENT",
+                "department": "ENT"
+            },
+            
+            # Psychiatry
+            {
+                "name": "Dr. Kailash Pandey",
+                "specialty": "Psychiatry",
+                "department": "Psychiatry"
+            },
+            {
+                "name": "Dr. Indira Rao",
+                "specialty": "Psychiatry",
+                "department": "Psychiatry"
+            },
+            
+            # Gastroenterology
+            {
+                "name": "Dr. Suresh Malhotra",
+                "specialty": "Gastroenterology",
+                "department": "Gastroenterology"
+            },
+            {
+                "name": "Dr. Poonam Khanna",
+                "specialty": "Gastroenterology",
+                "department": "Gastroenterology"
+            },
+            
+            # Urology
+            {
+                "name": "Dr. Harish Chopra",
+                "specialty": "Urology",
+                "department": "Urology"
+            },
+            {
+                "name": "Dr. Neeta Kapoor",
+                "specialty": "Urology",
+                "department": "Urology"
+            },
+            
+            # Pulmonology
+            {
+                "name": "Dr. Ashok Mehta",
+                "specialty": "Pulmonology",
+                "department": "Pulmonology"
+            },
+            {
+                "name": "Dr. Radha Krishnan",
+                "specialty": "Pulmonology",
+                "department": "Pulmonology"
+            },
+            
+            # Endocrinology
+            {
+                "name": "Dr. Gopal Das",
+                "specialty": "Endocrinology",
+                "department": "Endocrinology"
+            },
+            {
+                "name": "Dr. Leela Venkatesh",
+                "specialty": "Endocrinology",
+                "department": "Endocrinology"
+            },
+            
+            # Nephrology
+            {
+                "name": "Dr. Ravi Shankar",
+                "specialty": "Nephrology",
+                "department": "Nephrology"
+            },
+            {
+                "name": "Dr. Sarita Agarwal",
+                "specialty": "Nephrology",
+                "department": "Nephrology"
+            },
+            
+            # Oncology
+            {
+                "name": "Dr. Vijay Kumar",
+                "specialty": "Oncology",
+                "department": "Oncology"
+            },
+            {
+                "name": "Dr. Kamala Devi",
+                "specialty": "Oncology",
+                "department": "Oncology"
+            },
+            
+            # Rheumatology
+            {
+                "name": "Dr. Prakash Jain",
+                "specialty": "Rheumatology",
+                "department": "Rheumatology"
+            },
+            {
+                "name": "Dr. Sunita Bhatia",
+                "specialty": "Rheumatology",
+                "department": "Rheumatology"
             }
         ]
         
