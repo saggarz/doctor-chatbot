@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { ChatResponse, Doctor, Appointment, BookingFormData } from '../types'
 
-const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || '/api'
+const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || 'https://doctor-chatbot-api-5v9h.onrender.com'
 
 const api = axios.create({
   baseURL: API_BASE_URL,
