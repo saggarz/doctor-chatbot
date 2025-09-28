@@ -108,6 +108,22 @@ class AppointmentService:
     def book_appointment(self, doctor_name: str, patient_name: str, patient_phone: str, 
                         appointment_date: str, appointment_time: str, notes: str = None) -> Dict[str, Any]:
         """Book an appointment"""
+        # Validate required information
+        if not patient_name or patient_name.strip() == "":
+            return {"success": False, "message": "Patient name is required to book an appointment. Please provide the patient's name."}
+        
+        if not patient_phone or patient_phone.strip() == "":
+            return {"success": False, "message": "Patient phone number is required to book an appointment. Please provide the patient's phone number."}
+        
+        if not doctor_name or doctor_name.strip() == "":
+            return {"success": False, "message": "Doctor name is required to book an appointment."}
+        
+        if not appointment_date or appointment_date.strip() == "":
+            return {"success": False, "message": "Appointment date is required to book an appointment."}
+        
+        if not appointment_time or appointment_time.strip() == "":
+            return {"success": False, "message": "Appointment time is required to book an appointment."}
+        
         # Check doctor availability
         availability = self.doctor_service.check_doctor_availability(doctor_name, appointment_date, appointment_time)
         if not availability["available"]:

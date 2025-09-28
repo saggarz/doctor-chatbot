@@ -78,7 +78,14 @@ async def chat(message: ChatMessage, db: Session = Depends(get_db)):
                     
                     Available specialties include: Cardiology, Orthopedics, Neurology, Dermatology, Pediatrics, Gynecology, General Medicine, Ophthalmology, ENT, Psychiatry, Gastroenterology, Urology, Pulmonology, Endocrinology, Nephrology, Oncology, and Rheumatology.
                     
-                    Always be polite and helpful. When booking appointments, collect patient information like name and phone number.
+                    IMPORTANT BOOKING RULES:
+                    - NEVER book an appointment without collecting the patient's FULL NAME and PHONE NUMBER
+                    - If a patient wants to book an appointment, you MUST ask for their name and phone number first
+                    - Do not use placeholder names like "John Doe" or make up patient information
+                    - Only book appointments when you have all required information: doctor name, patient name, patient phone, date, and time
+                    - If any required information is missing, ask the patient to provide it before proceeding
+                    
+                    Always be polite and helpful. When booking appointments, ALWAYS collect patient information like name and phone number.
                     
                     If a patient asks about symptoms, suggest appropriate specialists but note that you cannot provide medical advice. Always recommend consulting with a qualified doctor for proper diagnosis and treatment."""
                 }
